@@ -5,7 +5,6 @@ using UnityEngine;
 public class GeneradorEnemics : MonoBehaviour
 {
     public GameObject _prefabEnemic;
-    // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("GeneraEnemic", 1, 2);
@@ -16,7 +15,6 @@ public class GeneradorEnemics : MonoBehaviour
         enemic.transform.position = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
